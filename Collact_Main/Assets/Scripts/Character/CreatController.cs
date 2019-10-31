@@ -7,6 +7,7 @@ using UnityEngine;
 public class CreatController : MonoBehaviour
 {
      private GameObject head;
+     private GameObject acc;
      private GameObject head_position;
 
      private GameObject head_position_top;
@@ -19,17 +20,23 @@ public class CreatController : MonoBehaviour
      private Color hsvColor;
      private float hue = 0, value = 1;
      public int year = 0;
-     public float saturation = 1;
+     public float saturation = 0.5f;
     public int field =1;
    
    public GameObject[] feildObject = new GameObject[7];
 
    public GameObject[] item = new GameObject[10];
+   
+   private GameObject[] itemPosition = new GameObject[10];
 
     private GameObject targetHead;
+    private Color jacketColor;
+   private GameObject parentPosition;
 
+   public int testNum = 3;
 
-
+   public Animator creatMotion;
+ 
 
 
     
@@ -39,22 +46,29 @@ public class CreatController : MonoBehaviour
         head = GameObject.FindGameObjectWithTag("head");
         head_position = GameObject.FindGameObjectWithTag("HeadPosition");
         body = GameObject.FindGameObjectWithTag("body");
-        bag = GameObject.FindGameObjectWithTag("bag");
         clothJacket = GameObject.FindGameObjectWithTag("cloth_jacket");
         clothShadow = GameObject.FindGameObjectWithTag("cloth_shadow");
+        itemPosition[0] = GameObject.FindGameObjectWithTag("backpack_position");
+        itemPosition[1] = GameObject.FindGameObjectWithTag("backpack_back_position");
+      //   itemPosition[2] = GameObject.FindGameObjectWithTag("clutch_position");
+        itemPosition[3] = GameObject.FindGameObjectWithTag("crosshipback_position");
+      //   itemPosition[4] = GameObject.FindGameObjectWithTag("gymbag_position");
+        itemPosition[5] = GameObject.FindGameObjectWithTag("hipback_position");
+        itemPosition[6] = GameObject.FindGameObjectWithTag("laptopcase_position");
+        itemPosition[7] = GameObject.FindGameObjectWithTag("suitcase_position");
+        itemPosition[8] = GameObject.FindGameObjectWithTag("thingbag_position");
+        creatMotion = GetComponent<Animator>();
+      //   itemPosition[9] = GameObject.FindGameObjectWithTag("totebag_position");
 
          hue = 352f / 360f;
          targetHead = feildObject[field-1];
-             
          altColor =  Color.HSVToRGB(hue, saturation, value);
 
         head.GetComponent<Renderer>().material.color = altColor;
-        bag.GetComponent<Renderer>().material.color = altColor;
         clothJacket.GetComponent<Renderer>().material.color = altColor;
         clothShadow.GetComponent<Renderer>().material.color = altColor;
 
 
-         gameObject.GetComponent<Renderer>().material.color = altColor;
 
          //Call Example to set all color values to zero.
          //Get the renderer of the object so we can access the color
@@ -64,9 +78,22 @@ public class CreatController : MonoBehaviour
 
         
     }
+    public void createAcc(int index){
+       if(acc){
+          Destroy(acc);
+       }
+       if(index == 2 || index == 4 || index==9){
+          index = 1;
+       }
+        acc = Instantiate(item[index],itemPosition[index].transform.position,itemPosition[index].transform.rotation);
+        acc.transform.parent = itemPosition[index].transform;
+        
+        acc.GetComponent<Renderer>().material.color = altColor;
+    }
+    
     public void changeJacketColor(){
-         altColor =  Color.HSVToRGB(hue, saturation, value);
-         clothJacket.GetComponent<Renderer>().material.color = altColor;
+         jacketColor =  Color.HSVToRGB(hue, saturation, value);
+         clothJacket.GetComponent<Renderer>().material.color = jacketColor;
     }
     public void create(float index){
                 switch (index)
@@ -106,12 +133,11 @@ public class CreatController : MonoBehaviour
              default:
                 break;
          }
-         altColor =  Color.HSVToRGB(hue, saturation, value);
+         altColor =  Color.HSVToRGB(hue, 1, value);
 
          head.GetComponent<Renderer>().material.color = altColor;
-        bag.GetComponent<Renderer>().material.color = altColor;
-        clothJacket.GetComponent<Renderer>().material.color = altColor;
-        clothShadow.GetComponent<Renderer>().material.color = altColor;
+         clothJacket.GetComponent<Renderer>().material.color = altColor;
+         clothShadow.GetComponent<Renderer>().material.color = altColor;
          gameObject.GetComponent<Renderer>().material.color = altColor;
          changeHead(targetHead);
 
@@ -148,7 +174,7 @@ public class CreatController : MonoBehaviour
       }
       
         head = Instantiate(feild,head_position.transform.position,head_position.transform.rotation);
-        head.transform.parent = head_position.transform;
+        head.transform.parent = head_position.transform.parent;
         head.GetComponent<Renderer>().material.color = altColor;
 
 

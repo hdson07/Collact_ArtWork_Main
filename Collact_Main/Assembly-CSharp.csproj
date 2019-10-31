@@ -47,43 +47,44 @@
   <ItemGroup>     <Compile Include="Assets\Scripts\Character\CreatController.cs" />
      <Compile Include="Assets\Scripts\Character\Origin_color.cs" />
      <Compile Include="Assets\Scripts\Character\saturation_controller.cs" />
+     <Compile Include="Assets\Scripts\DisplayScript.cs" />
      <Compile Include="Assets\Scripts\UI\SceneManager.cs" />
      <Compile Include="Assets\Scripts\UI\slideManager.cs" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>/Users/hduck/희덕/Duck/4rts/Collat_Art/Collact_ArtWork/Collact_Main/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>/Users/hduck/희덕/Duck/4rts/Collat_Art/Collact_ArtWork_Main/Collact_Main/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>/Users/hduck/희덕/Duck/4rts/Collat_Art/Collact_ArtWork/Collact_Main/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>/Users/hduck/희덕/Duck/4rts/Collat_Art/Collact_ArtWork_Main/Collact_Main/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/Users/hduck/희덕/Duck/4rts/Collat_Art/Collact_ArtWork/Collact_Main/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>/Users/hduck/희덕/Duck/4rts/Collat_Art/Collact_ArtWork_Main/Collact_Main/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/Users/hduck/희덕/Duck/4rts/Collat_Art/Collact_ArtWork/Collact_Main/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Users/hduck/희덕/Duck/4rts/Collat_Art/Collact_ArtWork_Main/Collact_Main/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>/Users/hduck/희덕/Duck/4rts/Collat_Art/Collact_ArtWork/Collact_Main/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>/Users/hduck/희덕/Duck/4rts/Collat_Art/Collact_ArtWork_Main/Collact_Main/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>/Users/hduck/희덕/Duck/4rts/Collat_Art/Collact_ArtWork/Collact_Main/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>/Users/hduck/희덕/Duck/4rts/Collat_Art/Collact_ArtWork_Main/Collact_Main/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>/Users/hduck/희덕/Duck/4rts/Collat_Art/Collact_ArtWork/Collact_Main/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>/Users/hduck/희덕/Duck/4rts/Collat_Art/Collact_ArtWork_Main/Collact_Main/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>/Users/hduck/희덕/Duck/4rts/Collat_Art/Collact_ArtWork/Collact_Main/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ <HintPath>/Users/hduck/희덕/Duck/4rts/Collat_Art/Collact_ArtWork_Main/Collact_Main/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Tilemap.Editor">
- <HintPath>/Users/hduck/희덕/Duck/4rts/Collat_Art/Collact_ArtWork/Collact_Main/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+ <HintPath>/Users/hduck/희덕/Duck/4rts/Collat_Art/Collact_ArtWork_Main/Collact_Main/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>/Users/hduck/희덕/Duck/4rts/Collat_Art/Collact_ArtWork/Collact_Main/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>/Users/hduck/희덕/Duck/4rts/Collat_Art/Collact_ArtWork_Main/Collact_Main/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>/Users/hduck/희덕/Duck/4rts/Collat_Art/Collact_ArtWork/Collact_Main/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>/Users/hduck/희덕/Duck/4rts/Collat_Art/Collact_ArtWork_Main/Collact_Main/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>/Users/hduck/희덕/Duck/4rts/Collat_Art/Collact_ArtWork/Collact_Main/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>/Users/hduck/희덕/Duck/4rts/Collat_Art/Collact_ArtWork_Main/Collact_Main/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2019.2.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -269,13 +270,13 @@
  <HintPath>/Applications/Unity/Hub/Editor/2019.2.10f1/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
- <HintPath>/Users/hduck/희덕/Duck/4rts/Collat_Art/Collact_ArtWork/Collact_Main/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+ <HintPath>/Users/hduck/희덕/Duck/4rts/Collat_Art/Collact_ArtWork_Main/Collact_Main/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>/Users/hduck/희덕/Duck/4rts/Collat_Art/Collact_ArtWork/Collact_Main/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>/Users/hduck/희덕/Duck/4rts/Collat_Art/Collact_ArtWork_Main/Collact_Main/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>/Users/hduck/희덕/Duck/4rts/Collat_Art/Collact_ArtWork/Collact_Main/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>/Users/hduck/희덕/Duck/4rts/Collat_Art/Collact_ArtWork_Main/Collact_Main/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity/Hub/Editor/2019.2.10f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

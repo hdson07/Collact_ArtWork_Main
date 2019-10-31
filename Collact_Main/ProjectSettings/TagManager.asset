@@ -22,6 +22,7 @@ TagManager:
   - suitcase_position
   - thingbag_position
   - totebag_position
+  - spine2
   layers:
   - Default
   - TransparentFX
