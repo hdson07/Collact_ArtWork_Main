@@ -68,6 +68,8 @@ public class CreatController : MonoBehaviour
         clothJacket.GetComponent<Renderer>().material.color = altColor;
         clothShadow.GetComponent<Renderer>().material.color = altColor;
 
+        createAcc(7);
+
 
 
 
@@ -137,7 +139,6 @@ public class CreatController : MonoBehaviour
          head.GetComponent<Renderer>().material.color = altColor;
          clothJacket.GetComponent<Renderer>().material.color = altColor;
          clothShadow.GetComponent<Renderer>().material.color = altColor;
-         gameObject.GetComponent<Renderer>().material.color = altColor;
          changeHead(targetHead);
 
     }
