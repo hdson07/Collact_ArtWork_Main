@@ -24,6 +24,7 @@ public class SceneManager : MonoBehaviour
     private CreatController CreatScript;
     private GameObject CreatedChar;
 
+    private GameObject acc;
     void Awake()
     {
         CreatedChar = GameObject.FindGameObjectWithTag("createdChar");
@@ -61,6 +62,15 @@ public class SceneManager : MonoBehaviour
         canvases[current].SetActive(false);
         current = 0;
         canvases[0].SetActive(true);
+        field = 1;
+        saturation = (float)0.5;
+        Destroy(acc);
+
+        CreatScript.field = this.field;
+        CreatScript.create(field);
+        CreatScript.saturation = saturation;
+        CreatScript.changeJacketColor();
+        
     }
 
     public void backward()
