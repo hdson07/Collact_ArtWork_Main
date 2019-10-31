@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.3587269, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1038,6 +1038,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 281343046}
   m_CullTransparentMesh: 0
+--- !u!1 &309703072
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 309703073}
+  m_Layer: 0
+  m_Name: suitcase_position
+  m_TagString: suitcase_position
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &309703073
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309703072}
+  m_LocalRotation: {x: -0.34466183, y: -0.000000026077023, z: 0.93872696, w: -0.000000022351735}
+  m_LocalPosition: {x: 0, y: 0.252, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3108225985241303721}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -40.322002, z: 179.99998}
 --- !u!1 &319470020
 GameObject:
   m_ObjectHideFlags: 0
@@ -2968,7 +2998,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3108225985241303721}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 195.407, y: -34.43701, z: 24.033997}
 --- !u!1 &938396255
 GameObject:
@@ -7168,6 +7198,7 @@ Transform:
   m_LocalPosition: {x: 3.3455e-11, y: 0.1593533, z: -1.8799613e-10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 309703073}
   - {fileID: 909528049}
   - {fileID: 7497962493624488856}
   m_Father: {fileID: 723828291882713573}
@@ -7212,7 +7243,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8296172668684195400}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: a3c7fc9bf323c400cb104ea7c50454f4, type: 2}
+  m_Avatar: {fileID: 9000000, guid: b43158b5f4ef24b7cab98890543466a4, type: 2}
   m_Controller: {fileID: 9100000, guid: 12e523a0475a447e1a179eba8d5b48e9, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
@@ -7917,7 +7948,7 @@ Transform:
   m_Children:
   - {fileID: 8633082063189461802}
   m_Father: {fileID: 3108225985241303721}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7529182136289022364
 GameObject:
