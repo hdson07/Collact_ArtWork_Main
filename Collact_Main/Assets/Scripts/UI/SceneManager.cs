@@ -16,9 +16,10 @@ public class SceneManager : MonoBehaviour
 
     public InputField pname;
 
-    private int field;
     private float saturation;
     private int year;
+
+    private int field;
     private string player_name;
     private CreatController CreatScript;
     private GameObject CreatedChar;
@@ -44,25 +45,12 @@ public class SceneManager : MonoBehaviour
         }
         if (current == 4)
         {
-            saturation = (slider.value) / 100;
-            //we have to embeded this part to changing saturation realtime
-            CreatScript.saturation = saturation;
-            CreatScript.changeJacketColor();
-    
-            //
- 
             CreatScript.createAcc(0);
             CreatScript.creatMotion.SetTrigger("Suprise");
-
-
         }
         if (current == 5)
         {
-            year = (int)slider2.value;
-            CreatScript.year = this.year;
-            CreatScript.createAcc(year);
             CreatScript.creatMotion.SetTrigger("Dancing");
-            
             StartCoroutine(stay10Seconds());
         }
     }

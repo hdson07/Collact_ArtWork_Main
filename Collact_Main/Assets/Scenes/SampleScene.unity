@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.3587269, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1735,13 +1735,14 @@ GameObject:
   m_Component:
   - component: {fileID: 634917888}
   - component: {fileID: 634917889}
+  - component: {fileID: 634917890}
   m_Layer: 0
   m_Name: Scene5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &634917888
 Transform:
   m_ObjectHideFlags: 0
@@ -1771,6 +1772,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneBackground: {fileID: 319470020}
   slider: {fileID: 2058499928}
+--- !u!114 &634917890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634917887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19a6c439a763623468f1e7afa9eeaa89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 9352418}
+  slider2: {fileID: 2058499928}
 --- !u!1 &646130505
 GameObject:
   m_ObjectHideFlags: 0
@@ -3526,6 +3541,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1081412509}
   - component: {fileID: 1081412510}
+  - component: {fileID: 1081412511}
   m_Layer: 0
   m_Name: Scene4
   m_TagString: Untagged
@@ -3562,6 +3578,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneBackground: {fileID: 1614539486}
   slider: {fileID: 9352418}
+--- !u!114 &1081412511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081412508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19a6c439a763623468f1e7afa9eeaa89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 9352418}
+  slider2: {fileID: 2058499928}
 --- !u!1 &1088678261
 GameObject:
   m_ObjectHideFlags: 0
@@ -4118,8 +4148,8 @@ RectTransform:
   m_Father: {fileID: 130134218}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.44444445, y: 0}
-  m_AnchorMax: {x: 0.44444445, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5923,7 +5953,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.44444445, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -6619,10 +6649,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 1928266369}
   m_HandleRect: {fileID: 1292062982}
   m_Direction: 0
-  m_MinValue: 1
-  m_MaxValue: 10
+  m_MinValue: 0
+  m_MaxValue: 9
   m_WholeNumbers: 1
-  m_Value: 5
+  m_Value: 4
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
