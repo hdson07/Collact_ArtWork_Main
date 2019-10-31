@@ -62,6 +62,7 @@ public class SceneManager : MonoBehaviour
             CreatScript.year = this.year;
             CreatScript.createAcc(year);
             CreatScript.creatMotion.SetTrigger("Dancing");
+            
             StartCoroutine(stay10Seconds());
         }
     }

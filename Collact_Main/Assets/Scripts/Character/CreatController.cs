@@ -50,15 +50,15 @@ public class CreatController : MonoBehaviour
         clothShadow = GameObject.FindGameObjectWithTag("cloth_shadow");
         itemPosition[0] = GameObject.FindGameObjectWithTag("backpack_position");
         itemPosition[1] = GameObject.FindGameObjectWithTag("backpack_back_position");
-      //   itemPosition[2] = GameObject.FindGameObjectWithTag("clutch_position");
+        itemPosition[2] = GameObject.FindGameObjectWithTag("clutch_position");
         itemPosition[3] = GameObject.FindGameObjectWithTag("crosshipback_position");
-      //   itemPosition[4] = GameObject.FindGameObjectWithTag("gymbag_position");
+        itemPosition[4] = GameObject.FindGameObjectWithTag("gymbag_position");
         itemPosition[5] = GameObject.FindGameObjectWithTag("hipback_position");
         itemPosition[6] = GameObject.FindGameObjectWithTag("laptopcase_position");
         itemPosition[7] = GameObject.FindGameObjectWithTag("suitcase_position");
         itemPosition[8] = GameObject.FindGameObjectWithTag("thingbag_position");
         creatMotion = GetComponent<Animator>();
-      //   itemPosition[9] = GameObject.FindGameObjectWithTag("totebag_position");
+        itemPosition[9] = GameObject.FindGameObjectWithTag("totebag_position");
 
          hue = 352f / 360f;
          targetHead = feildObject[field-1];
@@ -67,6 +67,8 @@ public class CreatController : MonoBehaviour
         head.GetComponent<Renderer>().material.color = altColor;
         clothJacket.GetComponent<Renderer>().material.color = altColor;
         clothShadow.GetComponent<Renderer>().material.color = altColor;
+
+
 
 
 
@@ -81,9 +83,6 @@ public class CreatController : MonoBehaviour
     public void createAcc(int index){
        if(acc){
           Destroy(acc);
-       }
-       if(index == 2 || index == 4 || index==9){
-          index = 1;
        }
         acc = Instantiate(item[index],itemPosition[index].transform.position,itemPosition[index].transform.rotation);
         acc.transform.parent = itemPosition[index].transform;
