@@ -20,7 +20,8 @@ public class RealTimeManager : MonoBehaviour
         CreatedChar = GameObject.FindGameObjectWithTag("createdChar");
         CreatScript = CreatedChar.GetComponent<CreatController>();
     }
-    public void FixedUpdate()
+
+    public void Update()
     {
         saturation = (slider.value) / 100;
         year = (int)slider2.value;
@@ -35,4 +36,5 @@ public class RealTimeManager : MonoBehaviour
         CreatScript.createAcc(year);
 
     }
+    
 }
