@@ -7,7 +7,8 @@ public class RealTimeManager : MonoBehaviour
 
     private float saturation;
     private int year;
-
+    private int current;
+    private int field;
     public Slider slider;
     public Slider slider2;
 
@@ -21,10 +22,9 @@ public class RealTimeManager : MonoBehaviour
     }
     public void FixedUpdate()
     {
-
-        saturation = (slider.value) / 100; 
+        saturation = (slider.value) / 100;
         year = (int)slider2.value;
-
+        
         Debug.Log(saturation);
         Debug.Log(year);
 
@@ -33,7 +33,6 @@ public class RealTimeManager : MonoBehaviour
         
         CreatScript.year = this.year;
         CreatScript.createAcc(year);
-       
 
     }
 }

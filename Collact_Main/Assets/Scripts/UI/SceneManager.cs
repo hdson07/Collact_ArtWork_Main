@@ -32,8 +32,12 @@ public class SceneManager : MonoBehaviour
     private CreatController CreatScript;
     private GameObject CreatedChar;
 
+<<<<<<< HEAD
     private Image scene4Image, scene5Image, scene6Image;
 
+=======
+    private GameObject acc;
+>>>>>>> 10584313a482ef231bec0d9ea2ce3200c5c666fb
     void Awake()
     {
         CreatedChar = GameObject.FindGameObjectWithTag("createdChar");
@@ -79,6 +83,15 @@ public class SceneManager : MonoBehaviour
         canvases[current].SetActive(false);
         current = 0;
         canvases[0].SetActive(true);
+        field = 1;
+        saturation = (float)0.5;
+        Destroy(acc);
+
+        CreatScript.field = this.field;
+        CreatScript.create(field);
+        CreatScript.saturation = saturation;
+        CreatScript.changeJacketColor();
+        
     }
 
     public void backward()
