@@ -25,19 +25,17 @@ public class SceneManager : MonoBehaviour
     public InputField pname;
 
     private float saturation;
-    private int year;
+    private int year = -1;
 
     private int field = 1;
     private string player_name;
     private CreatController CreatScript;
     private GameObject CreatedChar;
 
-<<<<<<< HEAD
     private Image scene4Image, scene5Image, scene6Image;
 
-=======
     private GameObject acc;
->>>>>>> 10584313a482ef231bec0d9ea2ce3200c5c666fb
+
     void Awake()
     {
         CreatedChar = GameObject.FindGameObjectWithTag("createdChar");
@@ -47,6 +45,7 @@ public class SceneManager : MonoBehaviour
         scene4Image = background[0].GetComponent<Image>();
         scene5Image = background[1].GetComponent<Image>();
         scene6Image = background[2].GetComponent<Image>();
+        year = -1;
 
 
         
@@ -66,7 +65,8 @@ public class SceneManager : MonoBehaviour
             CreatScript.creatMotion.SetTrigger("Hello");
         }
         if (current == 4)
-        {
+        {   
+            this.year = 0;
             CreatScript.createAcc(0);
             CreatScript.creatMotion.SetTrigger("Suprise");
         }
