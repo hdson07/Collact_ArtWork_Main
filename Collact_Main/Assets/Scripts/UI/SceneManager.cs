@@ -25,7 +25,7 @@ public class SceneManager : MonoBehaviour
     public InputField pname;
 
     private float saturation;
-    private int year = -1;
+    private int year = 0;
 
     private int field = 1;
     private string player_name;
@@ -66,7 +66,6 @@ public class SceneManager : MonoBehaviour
         }
         if (current == 4)
         {   
-            this.year = 0;
             CreatScript.createAcc(0);
             CreatScript.creatMotion.SetTrigger("Suprise");
         }

@@ -32,9 +32,7 @@ public class RealTimeManager : MonoBehaviour
         CreatScript.changeJacketColor();
         
         CreatScript.year = this.year;
-        if (year != -1){
-            CreatScript.createAcc(year);
-        }
+        CreatScript.createAcc(year);
 
     }
 }
