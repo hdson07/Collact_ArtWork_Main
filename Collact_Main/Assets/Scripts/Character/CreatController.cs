@@ -16,7 +16,7 @@ public class CreatController : MonoBehaviour
      private GameObject clothJacket;
      private GameObject clothShadow;
      private GameObject bag;
-          public Color altColor;
+      public Color altColor;
      private Color hsvColor;
      private float hue = 0, value = 1;
      public int year = 0;
@@ -68,7 +68,6 @@ public class CreatController : MonoBehaviour
         clothJacket.GetComponent<Renderer>().material.color = altColor;
         clothShadow.GetComponent<Renderer>().material.color = altColor;
 
-        createAcc(7);
 
 
 

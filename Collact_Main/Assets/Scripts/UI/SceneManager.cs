@@ -7,7 +7,15 @@ using UnityEngine.SceneManagement;
 public class SceneManager : MonoBehaviour
 {
     public GameObject[] canvases;
-    public Button[] buttons;
+    public Button[] buttons = new Button[7];
+
+    public GameObject[] background = new GameObject[3];
+    public Sprite[] backgroundImage_scene4 = new Sprite[7];
+
+    public Sprite[] backgroundImage_scene5 = new Sprite[7];
+
+    public Sprite[] offButton = new Sprite[7];
+    public Sprite[] onButton = new Sprite[7];
 
     public int current = 0;
 
@@ -19,15 +27,25 @@ public class SceneManager : MonoBehaviour
     private float saturation;
     private int year;
 
-    private int field;
+    private int field = 1;
     private string player_name;
     private CreatController CreatScript;
     private GameObject CreatedChar;
+
+    private Image scene4Image, scene5Image, scene6Image;
 
     void Awake()
     {
         CreatedChar = GameObject.FindGameObjectWithTag("createdChar");
         CreatScript = CreatedChar.GetComponent<CreatController>();
+        buttons[0].image.sprite = onButton[0];
+
+        scene4Image = background[0].GetComponent<Image>();
+        scene5Image = background[1].GetComponent<Image>();
+        scene6Image = background[2].GetComponent<Image>();
+
+
+        
 
         canvases[0].SetActive(true);
 
@@ -72,10 +90,14 @@ public class SceneManager : MonoBehaviour
 
     public void head_color_button(int btnNum)
     {
+        if(btnNum != field){
+            buttons[field-1].image.sprite = offButton[field-1];
+        }
         field = btnNum;
         CreatScript.field = this.field;
         CreatScript.create(field);
         Debug.Log(field);
+        ChangeImage(btnNum-1);
     }
 
     public void input_name()
@@ -83,4 +105,16 @@ public class SceneManager : MonoBehaviour
         player_name = pname.text;
         Debug.Log(player_name);
     }
+
+     public void ChangeImage(int index){
+     if (buttons[index].image.sprite == onButton[index])
+         buttons[index].image.sprite = offButton[index];
+     else {
+         buttons[index].image.sprite = onButton[index];
+     }
+     scene4Image.sprite = backgroundImage_scene4[index];
+     scene5Image.sprite = backgroundImage_scene5[index];
+     scene6Image.color = CreatScript.altColor;
+     
+ }
 }
